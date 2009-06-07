@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>TAEB - Bugs and Limitations</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+
+<body>
+    <h1>TAEB - Bugs and Limitations</h1>
+
+    <p>
+        It's too big.  Expect about 100-200 MB of RAM usage for a
+        fully-instantiated main dungeon, double that if it manages to
+        instantiate Gehennom.  Sometimes it uses much more for poorly
+        understood reasons.
+    </p>
+
+    <p>
+        It's too slow.  Depending on number of changed tiles, amount
+        of monsters, etc, it can be as much as about 1 second to
+        process input and 4 more for the default AI to decide on a
+        move (on sorear's 2GHz P4).  Admittedly, it's hard to critique
+        bot performance much faster than that, but it does make
+        debugging late game issues harder, and is a blocker for
+        <a href="future.html#ih3">Interhack 3</a>.
+    </p>
+
+    <p>
+        The mechanisms used to synchronize with NetHack are all a bit
+        fragile and occasionally (1 in 10<sup>5</sup> level) report
+        end of output prematurely.  Not enough to motivate serious
+        improvement efforts, but enough to produce the occasional
+        unreproducable glitch.
+    </p>
+
+    <p>
+        Teleportitis causes item data to be incorrectly updated if it
+        triggers during item actions (eating, pickup).  Auto-recovers
+        on sight, but still warning spam.
+    </p>
+
+    <p>
+        Group combat code is still pretty lousy in Behavioral, it has
+        to rely on Elbereth far too often, and it doesn't even abuse
+        it properly.  Tends to die to captains and the like a lot for
+        obvious reasons.  Priorities are a little tricky near trolls,
+        it prefers resting over dealing with the corpse, but there's
+        no obvious safe way to fix this.
+    </p>
+
+    <p>
+        Behavioral tends to oscillate in situations where a desired
+        action is impossible, or becomes harder to see as it gets
+        closer; the standard example of this is a monster in a
+        corridor, Behavioral approaches at an angle for safety, loses
+        sight to the monster, forgets that it is there, goes back to
+        do something else, and repeats indefinitely.
+    </p>
+
+    <p><a href="index.html">Back to TAEB Main</a></p>
+</body>
+</html>
+<!-- vim: set tw=70 si: -->
