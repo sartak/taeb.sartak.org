@@ -16,14 +16,68 @@
 
     <h2><a name="monster-tracking">Monster Tracking</a></h2>
     <p>
+        Currently, TAEB completely forgets about monsters when they
+        are not visible.  It rediscovers them on the next turn and
+        generally acts correctly, but not being able to track monster
+        state from turn to turn puts annoying limitations on our
+        tactics.  If we could somehow track monsters the way we track
+        items, TAEB would potentially be a much better fighter.
+    </p>
+    <p>
+        Most significantly, it is impossible for TAEB to know if a
+        monster is awake; since it never remembers seeing monsters
+        before, it is forced to conservatively assume the monster is
+        asleep.  If a monster is potentially asleep, we can't use
+        combat tactics like waiting in a corridor - we would wait
+        forever!  This is an especially annoying problem because
+        valkyries start with Stealth, so zoo monsters are very often
+        asleep.
+    </p>
+    <p>
+        Unfortunately, monster tracking is hard.  Monsters move around
+        much more than items, so in general it's impossible to know
+        <i>which</i> monsters are the same as monsters on the previous
+        turn, especially in pack situations.  We really want to
+        support tracking packs, because pack monsters are a major TAEB
+        killer.  Also, monsters have many hidden variables, and
+        testing in combat doesn't work very well.
+    </p>
+    <p>
+        The best candidate solutions are based on variations of
+        <a href="http://en.wikipedia.com/wiki/Bayesian_inference">
+            Bayesian inference</a>, deciding for each monster a
+        conditional probability of being something we care about.
+        This is a fair amount of work, though, and little progress has
+        been made.
     </p>
 
     <h2><a name="newais">New AIs</a></h2>
     <p>
+        Behavioral, time-tested as it is, is starting to show signs of
+        having reached the limits of its extensibility.  Each new
+        behavior added slows down the bot additively, and in
+        interesting environments like quest levels we may take several
+        seconds to decide on each move.  Can Behavioral be saved or
+        will a new, more stateful AI like <a
+            href="planar.html">Planar</a> take the torch?
     </p>
 
     <h2><a name="ih3">Interhack III</a></h2>
     <p>
+        One long-term idea for the TAEB core is to use it to power the
+        next-generation of <a
+            href="http://interhack.us/">Interhack</a>.  This would
+        result in an Interhack with ability to semi-automate arbitrary
+        tasks, extremely flexible Perl scriptability, and a queriable
+        model of the entire dungeon, enabling an interface to rival
+        Crawl.  There are two main blockers for this. First, TAEB has
+        to support all NetHack commands and game mechanics.  While old
+        Interhack could get away with simply passing through
+        unrecognized commands and output (nearly all of it), that
+        would wreak havoc with TAEB's world model.  Second, TAEB needs
+        to become much faster; on a good day, TAEB processing lag is
+        on the order of a third of a second, more than twice the
+        network lag from San Diego to Helsinki.
     </p>
 
     <p><a href="index.html">Back to TAEB Main</a></p>
