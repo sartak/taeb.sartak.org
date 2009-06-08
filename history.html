@@ -10,45 +10,47 @@
 
 <body>
     <div id="main">
-        <h1>TAEB - History</h1>
+        <div id="content">
+            <h1>TAEB - History</h1>
 
-        <h2>nHackBot and nhbot</h2>
-        <p>
-            In the beginning was <a href="http://alt.org/nethack/plr.php?player=nHackBot">nHackBot</a> (aka "Jessie the Bottie Ventura"), spawned by HanClinto in November of 2005.
-            Written in C#, nHackBot was an advanced (for the time) bot. It could parse the entire screen and could perform rudimentary tasks such as dipping for Excalibur.
-            nHackbot owned the (known) high mark for score and dungeon depth for quite some time, achieving a score 18,432 and maximum depth of 10.
-        </p>
+            <h2>nHackBot and nhbot</h2>
+            <p>
+                In the beginning was <a href="http://alt.org/nethack/plr.php?player=nHackBot">nHackBot</a> (aka "Jessie the Bottie Ventura"), spawned by HanClinto in November of 2005.
+                Written in C#, nHackBot was an advanced (for the time) bot. It could parse the entire screen and could perform rudimentary tasks such as dipping for Excalibur.
+                nHackbot owned the (known) high mark for score and dungeon depth for quite some time, achieving a score 18,432 and maximum depth of 10.
+            </p>
 
-        <p>
-            Intrigued by nHackBot and itching to do something similar, Shawn Moore started <a href="http://alt.org/nethack/plr.php?player=nhbot">nhbot</a> in December 2005, using Perl.
-            While nHackBot sought to eventually be a complete bot, nhbot had no such aspirations. It solved the screen parsing problem by not parsing the screen at all, opting instead to read just the top line. Rather than calculating where to move next, it walked around randomly. Eventually, it did gain the ability to read the bottom line in order to know when to engrave Elbereth, but that was the extent of nhbot's sight.
-            nhbot did remarkably well for being so near-sighted, posting a high score of 15,185. However, it did not descend very far, making it only to dungeon level 3.
-        </p>
+            <p>
+                Intrigued by nHackBot and itching to do something similar, Shawn Moore started <a href="http://alt.org/nethack/plr.php?player=nhbot">nhbot</a> in December 2005, using Perl.
+                While nHackBot sought to eventually be a complete bot, nhbot had no such aspirations. It solved the screen parsing problem by not parsing the screen at all, opting instead to read just the top line. Rather than calculating where to move next, it walked around randomly. Eventually, it did gain the ability to read the bottom line in order to know when to engrave Elbereth, but that was the extent of nhbot's sight.
+                nhbot did remarkably well for being so near-sighted, posting a high score of 15,185. However, it did not descend very far, making it only to dungeon level 3.
+            </p>
 
-        <h2>Powers combined: EliteBot</h2>
-        <p>
-            In October of 2006, Shawn and HanClinto joined forces with GreyKnight in creating <a href="http://alt.org/nethack/plr.php?player=EliteBot">EliteBot</a>.
-            This time they decided to plan out the architecture of the bot. Written in Ruby, it was very short-lived, lasting only until the end of the month. However, EliteBot spawned a lot of discussion and ideas that would prove useful in future bots.
-        </p>
+            <h2>Powers combined: EliteBot</h2>
+            <p>
+                In October of 2006, Shawn and HanClinto joined forces with GreyKnight in creating <a href="http://alt.org/nethack/plr.php?player=EliteBot">EliteBot</a>.
+                This time they decided to plan out the architecture of the bot. Written in Ruby, it was very short-lived, lasting only until the end of the month. However, EliteBot spawned a lot of discussion and ideas that would prove useful in future bots.
+            </p>
 
-        <h2>TAEB Mark I: Ruby</h2>
-        <p>
-            The itch of creating of a bot for NetHack was still strong and so from the ashes of EliteBot arose another. Originally nameless, it was named "Tactical Amulet Extraction Bot" &mdash; TAEB &mdash; by toft. Although it performed better than EliteBot, achieving a max score of 6,166 (on <a href="http://alt.org/nethack/player-all.php?player=doytaeb">doytaeb</a>) and reaching a depth of 10, it too did not last long. In all, (ruby)TAEB played primarily over four days: March 4-7, 2007.
-            It was during this time that Jesse Luehrs first became involved with an AI rewrite, but the project lost momentum before his changes were merged.
-        </p>
+            <h2>TAEB Mark I: Ruby</h2>
+            <p>
+                The itch of creating of a bot for NetHack was still strong and so from the ashes of EliteBot arose another. Originally nameless, it was named "Tactical Amulet Extraction Bot" &mdash; TAEB &mdash; by toft. Although it performed better than EliteBot, achieving a max score of 6,166 (on <a href="http://alt.org/nethack/player-all.php?player=doytaeb">doytaeb</a>) and reaching a depth of 10, it too did not last long. In all, (ruby)TAEB played primarily over four days: March 4-7, 2007.
+                It was during this time that Jesse Luehrs first became involved with an AI rewrite, but the project lost momentum before his changes were merged.
+            </p>
 
-        <h2>Interhack</h2>
-        <p>
-            In the intervening months, <a href="http://interhack.us/">interhack</a> was born. Created as a layer between NetHack and the player, interhack kept Shawn involved in programmatic NetHack.
-        </p>
+            <h2>Interhack</h2>
+            <p>
+                In the intervening months, <a href="http://interhack.us/">interhack</a> was born. Created as a layer between NetHack and the player, interhack kept Shawn involved in programmatic NetHack.
+            </p>
 
-        <h2>TAEB</h2>
-        <p>
-            Finally, in November 2007, TAEB in its current incarnation was born. As should surprise no one at this time, it again only lasted five days. However, this time the architecture was deemed Good and TAEB survived the drought and was hacked on once again in December 2007. Notably, it had others contribute to it, helping build inertia behind it.
-        </p>
-        <p>
-            Other bots have come and gone over TAEB's lifetime with TAEB surviving them and its own quiet periods. It continues to be actively developed, now and then. It was the first bot to break the 100,000 point barrier, with its current high score standing at 417,613.
-        </p>
+            <h2>TAEB</h2>
+            <p>
+                Finally, in November 2007, TAEB in its current incarnation was born. As should surprise no one at this time, it again only lasted five days. However, this time the architecture was deemed Good and TAEB survived the drought and was hacked on once again in December 2007. Notably, it had others contribute to it, helping build inertia behind it.
+            </p>
+            <p>
+                Other bots have come and gone over TAEB's lifetime with TAEB surviving them and its own quiet periods. It continues to be actively developed, now and then. It was the first bot to break the 100,000 point barrier, with its current high score standing at 417,613.
+            </p>
+        </div>
     </div>
 
     <div id="sidebar">
