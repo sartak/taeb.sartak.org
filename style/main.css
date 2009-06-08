@@ -1,0 +1,46 @@
+/**** layout ****/
+/* navigation */
+#nav ul {
+    padding:0px;
+    text-align:center;
+}
+
+#nav ul li {
+    display:inline;
+    list-style-type:none;
+    padding:.25em;
+    padding-left:.5em;
+    padding-right:.5em;
+}
+
+#nav a {
+}
+
+/**** colors ****/
+#nav a {
+    color:#00f;
+}
+
+#nav li:first-child {
+    border-left:none;
+}
+
+#nav li {
+    border-left:1px solid black;
+}
+
+#nav a:hover, #nav a:visited {
+    color:#800080;
+}
+
+a {
+    text-decoration:none;
+}
+
+a:hover {
+    border-bottom:dashed 1px red;
+}
+
+
+/**** fonts ****/
+
