@@ -1,4 +1,8 @@
 /**** layout ****/
+body {
+    margin:0;
+}
+
 #main {
     float:left;
     padding:0px;
@@ -7,12 +11,20 @@
     overflow:hidden;
 }
 
+#content {
+    padding:1em;
+}
+
 #sidebar {
     float:right;
     overflow:hidden;
     padding-left:20px;
     width:30%;
     word-wrap:break-word;
+}
+
+#nav {
+    padding:1em;
 }
 
 /* navigation */
