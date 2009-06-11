@@ -71,13 +71,17 @@ h1 {
 }
 
 /**** fonts ****/
+body {
+    font-family: Droid Serif, Gentium, serif;
+    font-size: 10pt;
+}
+
 h1 {
     font-variant:small-caps;
 }
 
 p {
     text-align:justify;
-    font-family: Droid Serif, Gentium, Bookman Old Style, serif;
 }
 
 h1, h2, h3, h4, h5 {
