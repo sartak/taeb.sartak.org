@@ -5,21 +5,22 @@ body {
 
 #main {
     float:left;
+    width:100%;
+    margin-right:-305px;
     padding:0px;
-    width:67%;
     word-wrap:break-word;
     overflow:hidden;
 }
 
 #content {
     padding:1em;
+    margin-right:300px;
 }
 
 #sidebar {
     float:right;
+    width:300px;
     overflow:hidden;
-    padding-left:20px;
-    width:30%;
     word-wrap:break-word;
 }
 
@@ -37,6 +38,11 @@ body {
 #nav ul li {
     margin:0;
     padding:0;
+}
+
+.clearing {
+    height:0;
+    clear:both;
 }
 
 /**** colors ****/
@@ -62,7 +68,10 @@ a:hover {
 
 #sidebar {
     background-color:#fff;
+    /**/
     border-left:2px dashed #000;
+    border-bottom:2px dashed #000;
+    /**/
     color:#000;
 }
 
