@@ -3,6 +3,14 @@ body {
     margin:0;
 }
 
+table {
+    border-spacing:0px;
+}
+
+td, th {
+    padding:.4em;
+}
+
 #main {
     float:left;
     width:100%;
@@ -48,6 +56,10 @@ body {
 /**** colors ****/
 body {
     background-color:#f5f5f5;
+}
+
+table, td, th {
+    border:1px solid black;
 }
 
 #nav a {
