@@ -73,12 +73,20 @@ th.header {
 th.headerSortUp { 
     background-color:#3399FF; 
     background-image:url(../image/down.png);
-} 
+}
 
 th.headerSortDown { 
     background-color:#3399FF; 
     background-image:url(../image/up.png);
-} 
+}
+
+td.yes {
+    background-color:#6f6;
+}
+
+td.no {
+    background-color:#f55;
+}
 
 #nav a {
     color:#00f;
