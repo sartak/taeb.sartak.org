@@ -71,12 +71,12 @@ th.header {
 }
 
 th.headerSortUp { 
-    background-color:#3399FF; 
+    background-color:#96d7ff; 
     background-image:url(../image/down.png);
 }
 
 th.headerSortDown { 
-    background-color:#3399FF; 
+    background-color:#96d7ff; 
     background-image:url(../image/up.png);
 }
 
