@@ -16,7 +16,6 @@ td, th {
     width:100%;
     margin-right:-305px;
     padding:0px;
-    word-wrap:break-word;
     overflow:hidden;
 }
 
@@ -29,7 +28,6 @@ td, th {
     float:right;
     width:300px;
     overflow:hidden;
-    word-wrap:break-word;
 }
 
 #nav {
